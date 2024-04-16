@@ -1,0 +1,1 @@
+tinyMCE.addI18n('en.p3dvoil',{links:"3D Model URL",width:"Width",height:"Height",murl_invalid:"Please specify a valid 3D Model URL.",youraccount:"Your Account",contacts:"Contact Us"});

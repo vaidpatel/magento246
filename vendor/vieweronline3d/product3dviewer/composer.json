@@ -1,0 +1,28 @@
+{
+    "name": "vieweronline3d/product3dviewer",
+    "description": "N/A",
+    "require": {
+		"php": ">=7.4.0"
+    },
+    "type": "magento2-module",
+    "version": "3.0.3",
+    "license": [
+		  "OSL-3.0"
+		 ],
+	"authors": [
+		  {
+		   "name": "Marco Pavan",
+		   "email": "3dvieweronline@gmail.com",
+		   "homepage": "https://www.3dvieweronline.com",
+		   "role": "Developer"
+		  }
+	], 
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Vieweronline3d\\Product3DViewer\\": ""
+        }
+    }
+}

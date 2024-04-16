@@ -1,0 +1,51 @@
+{
+    "name": "magento/upward",
+    "description": "UPWARD parser and server",
+    "type": "library",
+    "license": "OSL-3.0",
+    "require": {
+        "php": "~8.1.0||~8.2.0",
+        "mustache/mustache": "^2.12",
+        "xantios/mimey": "^2.2",
+        "symfony/yaml": "^2.3 || ^3.3 || ^4.0 || ^5.0",
+        "laminas/laminas-http": "^2.6.0",
+        "laminas/laminas-stdlib": "^3.2.1"
+    },
+    "require-dev": {
+        "bebat/verify": "^2.0",
+        "friendsofphp/php-cs-fixer": "~3.0.0",
+        "mockery/mockery": "^1.2",
+        "phpunit/phpunit": "~9.5.0",
+        "phpmd/phpmd": "^2.9.1"
+    },
+    "authors": [
+        {
+            "name": "Ben Batschelet",
+            "email": "batschel@adobe.com"
+        }, {
+            "name": "Tommy Wiebell",
+            "email": "twiebell@adobe.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Magento\\Upward\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Magento\\Upward\\Test\\": "test"
+        }
+    },
+    "config": {
+      "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "scripts": {
+        "cs-check": "php-cs-fixer fix -v --allow-risky=yes --ansi --dry-run --diff",
+        "cs-check-file": "php-cs-fixer fix -v --allow-risky=yes --ansi --dry-run --diff --path-mode=intersection",
+        "cs-fix": "php-cs-fixer fix -v --allow-risky=yes --ansi",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --coverage-clover=coverage.xml"
+    }
+}

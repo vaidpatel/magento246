@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>3D Model Viewer</title>
+	<script type="text/javascript" src="js/tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/mctabs.js"></script>
+	<script type="text/javascript" src="js/iframe.js"></script>
+</head>
+<body role="application">
+<form onsubmit="IframeLinklog.update();return false;" action="#">
+	<div class="panel_wrapper iframe3dLinkViewer">
+		<div id="general_panel" class="panel current">
+			<table role="presentation" border="0" cellpadding="4" cellspacing="0">
+					<tr role="group" aria-labelledby="width_label">
+						<td><label id="width_label" for="url">3D Model URL</label></td>
+						<td class="nowrap">
+							<input id="url" name="url" type="text" value=""/>
+						</td>
+					</tr>
+					<tr role="group" aria-labelledby="width_label">
+						<td><label id="width_label" for="width">Width</label></td>
+						<td class="nowrap">
+							<input id="width" name="width" type="text" value="" placeholder=" e.g. 640"/>
+						</td>
+					</tr>
+					<tr role="group" aria-labelledby="width_label">
+						<td><label id="height_label" for="height">Height</label></td>
+						<td class="nowrap">
+							<input id="height" name="height" type="text" value="" placeholder=" e.g. 480"/>
+						</td>
+					</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="mceActionPanel">
+		<input type="submit" id="insert" name="insert" value="Insert" />
+		<input type="button" id="cancel" name="cancel" value="Cancel" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
+</body>
+</html>

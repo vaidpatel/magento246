@@ -1,0 +1,13 @@
+.iframe3dLinkViewer.panel_wrapper div.current {
+    display: block;
+    width: 100%;
+    height: 120px;
+    overflow: visible;
+}
+.iframe3dLinkViewer input#width,.iframe3dLinkViewer input#height {
+    width: 65px;
+}
+
+.mceActionPanel{
+    padding-top: 8%;
+}
